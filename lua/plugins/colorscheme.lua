@@ -1,26 +1,25 @@
-return {
-    'rose-pine/neovim',
-    name = 'rose-pine',
-    priority = 1000,
-    config = function()
-        require('rose-pine').setup({	disable_background = true,
-	})
-	 vim.cmd('colorscheme rose-pine')
-	end
-}
-
--- poimandres theme
---
 -- return {
---  {
---    'olivercederborg/poimandres.nvim',
---    lazy = false,
---    priority = 1000,
---    config = function()
---      require('poimandres').setup {
---         disable_background = true,
---      }
---         vim.cmd("colorscheme poimandres")
---    end
---  }
+--   "folke/tokyonight.nvim" ,
+--     name = 'tokyonight',
+--     priority = 1000,
+--     config = function()
+--         require('tokyonight').setup({	transparent = true, 
+-- 	})
+-- 	 vim.cmd('colorscheme tokyonight')
+-- 	end
 -- }
+
+
+return {
+ {
+   'olivercederborg/poimandres.nvim',
+   lazy = false,
+   priority = 1000,
+   config = function()
+     require('poimandres').setup {
+        disable_background = true,
+     }
+        vim.cmd("colorscheme poimandres")
+   end
+ }
+}
